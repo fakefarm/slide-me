@@ -4,4 +4,52 @@
 
 body{
   background: gray;
+  font-size: 100%;
+}
+
+.container{
+  width: 90%;
+  margin: 10em auto;
+}
+
+h1{
+    font-size: 5em;
+    font-family: "adelle";
+  }
+
+.logo{
+  display: block;
+}
+
+// --- tablet sizes ------------------------------------------
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+  body{
+    background: red;
+  }
+  h1{
+    font-size: 13em;
+  }
+}
+
+
+// --- mobile devices ------------------------------------------
+
+@media screen and (max-width:500px) {
+  body{
+    background: white;
+  }
+  h1{
+    font-size: 4em;
+  }
+
+  .logo{
+
+    // What is the best way to do background image?
+    background: image-url("smallArrow.png") no-repeat;
+
+    // Do I need height?
+    height: 60px;
+
+  }
 }
