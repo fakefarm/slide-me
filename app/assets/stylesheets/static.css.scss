@@ -14,14 +14,29 @@ body{
 }
 
 h1{
-    margin: 0;
-    padding: 0;
+    margin: 0 0.5em 0 0;
+    padding: 0 0.5em 0 0;
     font-size: 14em;
     font-family: "adelle";
     text-align: center;
     color: #333;
     text-shadow: 0px 1px 2px white;
+    border-right: 2px solid gray;
+    float: left;
   }
+
+h2{
+  font-size: 4em;
+  font-family:  "adelle";
+  color: #333;
+
+}
+
+h2.tk-adelle{
+  font-family: "adelle",serif;
+  font-style: italic;
+  font-weight: 300;
+}
 
 .logo{
   width: 963px;
