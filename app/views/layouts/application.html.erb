@@ -7,11 +7,16 @@
   <script type="text/javascript" src="//use.typekit.net/omb5wcx.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0,minimum-scale=1.0, initial-scale=1.0" />
 </head>
 <body>
 
 <section class="container">
   <%= yield %>
 </section>
+
+<section class='gif'>
+<%= link_to (image_tag "slider.gif"), "http://themeforest.net/forums/thread/how-responsive-web-designers-imagine-user-behavior/80480" %></section>
+
 </body>
 </html>

@@ -10,13 +10,14 @@ body{
 .container{
   width: 90%;
   margin: 6em auto;
-  min-width: 1000px;
+  min-width: 1100px;
+  max-width: 1200px;
 }
 
 h1{
     margin: 0 0.5em 0 0;
     padding: 0 0.5em 0 0;
-    font-size: 14em;
+    font-size: 10em;
     font-family: "adelle";
     text-align: center;
     color: #333;
@@ -26,10 +27,10 @@ h1{
   }
 
 h2{
-  font-size: 4em;
+  font-size: 3em;
   font-family:  "adelle";
   color: #333;
-
+  margin-top: 0.2em;
 }
 
 h2.tk-adelle{
@@ -54,6 +55,18 @@ h2.tk-adelle{
 
 p, a{
   font-family: 'museo-sans';
+  font-size: 1.4em;
+  line-height: 1.5em;
+
+}
+
+a{
+ color: #48920F;
+ font-size: 1.2em;
+ margin: 0 1em;
+  &:hover{
+   color: #67963F;
+  }
 }
 
 .description{
@@ -67,6 +80,7 @@ ul{
 }
 
 li{
+  text-align: left;
   display: inline-block;
 }
 
@@ -76,13 +90,19 @@ a{
   font-weight: bold;
 }
 
-
+.gif{
+  margin: 0 auto ;
+  width: 300px;
+  p{
+    font-size: .8em;
+  }
+}
 // --- tablet sizes ------------------------------------------
 
 @media screen and (min-width: 481px) and (max-width:999px) {
 
   .container{
-    min-width: 600px;
+    min-width: 750px;
   }
 
 
@@ -100,8 +120,29 @@ a{
 
   h1{
     font-size: 9em;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    float: none;
+  }
+
+  h2{
+    font-size: 2em;
+    font-family:  "adelle";
+    color: #333;
+    margin-top: 0.2em;
+  }
+
+  a{
+   color: #EE7600;
+   font-size: 1.2em;
+   margin: 0 1em;
+    &:hover{
+     color: #8B4500;
+    }
   }
 }
+
+
 
 
   // --- mobile devices ------------------------------------------
@@ -132,7 +173,21 @@ a{
 
 
   h1{
-    font-size: 5em;
+    font-size: 4em;
+    border-right: none;
+    float: none;
+  }
+
+  h2{
+    font-size: 1.2em;
+    font-family:  "adelle";
+    color: #333;
+    margin-top: 0.2em;
+  }
+
+  p{
+    font-size: 1.1em;
+    width: 100%;
   }
 
   .description{
@@ -145,12 +200,13 @@ a{
 
   li{
     display: block;
-    background: red;
+    background: #333;
     margin: 1em 1em 1em 0;
   }
 
   a{
     display: block;
+    color: white;
     text-decoration: none;
     padding: 1em;
     font-size: 2em;
@@ -160,4 +216,7 @@ a{
     background-color: black;
   }
 
+  .gif{
+    display: none;
+  }
 }
